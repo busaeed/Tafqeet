@@ -3,58 +3,58 @@ import java.math.RoundingMode;
 
 public class Tafqeet {
 	
-	private static String riyalSaudi = "ÑíÇá ÓÚæÏí";
-	private static String riyalaanSaudiaan = "ÑíÇáÇä ÓÚæÏíÇä ÇËäÇä";
-	private static String riyalatSaudi = "ÑíÇáÇÊ ÓÚæÏíÉ";
-	private static String riyalanSaudian = "ÑíÇáÇğ ÓÚæÏíÇğ";
+	private static String riyalSaudi = "Ø±ÙŠØ§Ù„ Ø³Ø¹ÙˆØ¯ÙŠ";
+	private static String riyalaanSaudiaan = "Ø±ÙŠØ§Ù„Ø§Ù† Ø³Ø¹ÙˆØ¯ÙŠØ§Ù† Ø§Ø«Ù†Ø§Ù†";
+	private static String riyalatSaudi = "Ø±ÙŠØ§Ù„Ø§Øª Ø³Ø¹ÙˆØ¯ÙŠØ©";
+	private static String riyalanSaudian = "Ø±ÙŠØ§Ù„Ø§Ù‹ Ø³Ø¹ÙˆØ¯ÙŠØ§Ù‹";
 	
-	private static String minus = "ÓÇáÈ";
-	private static String and = "æ";
+	private static String minus = "Ø³Ø§Ù„Ø¨";
+	private static String and = "Ùˆ";
 	
-	private static String[] ones = {"ÕİÑ", "æÇÍÏ", "ÇËäÇä", "ËáÇËÉ", "ÇÑÈÚÉ", "ÎãÓÉ", "ÓÊÉ", "ÓÈÚÉ", "ËãÇäíÉ", "ÊÓÚÉ"};
-	private static String[] tens = {"", "ÚÔÑÉ", "ÚÔÑæä", "ËáÇËæä", "ÇÑÈÚæä", "ÎãÓæä", "ÓÊæä", "ÓÈÚæä", "ËãÇäæä", "ÊÓÚæä"};
-	private static String[] hundreds = {"", "ãÇÆÉ", "ãÇÆÊÇä", "ËáÇËãÇÆÉ", "ÇÑÈÚãÇÆÉ", "ÎãÓãÇÆÉ", "ÓÊãÇÆÉ", "ÓÈÚãÇÆÉ", "ËãÇäãÇÆÉ", "ÊÓÚãÇÆÉ"};
+	private static String[] ones = {"ØµÙØ±", "ÙˆØ§Ø­Ø¯", "Ø§Ø«Ù†Ø§Ù†", "Ø«Ù„Ø§Ø«Ø©", "Ø§Ø±Ø¨Ø¹Ø©", "Ø®Ù…Ø³Ø©", "Ø³ØªØ©", "Ø³Ø¨Ø¹Ø©", "Ø«Ù…Ø§Ù†ÙŠØ©", "ØªØ³Ø¹Ø©"};
+	private static String[] tens = {"", "Ø¹Ø´Ø±Ø©", "Ø¹Ø´Ø±ÙˆÙ†", "Ø«Ù„Ø§Ø«ÙˆÙ†", "Ø§Ø±Ø¨Ø¹ÙˆÙ†", "Ø®Ù…Ø³ÙˆÙ†", "Ø³ØªÙˆÙ†", "Ø³Ø¨Ø¹ÙˆÙ†", "Ø«Ù…Ø§Ù†ÙˆÙ†", "ØªØ³Ø¹ÙˆÙ†"};
+	private static String[] hundreds = {"", "Ù…Ø§Ø¦Ø©", "Ù…Ø§Ø¦ØªØ§Ù†", "Ø«Ù„Ø§Ø«Ù…Ø§Ø¦Ø©", "Ø§Ø±Ø¨Ø¹Ù…Ø§Ø¦Ø©", "Ø®Ù…Ø³Ù…Ø§Ø¦Ø©", "Ø³ØªÙ…Ø§Ø¦Ø©", "Ø³Ø¨Ø¹Ù…Ø§Ø¦Ø©", "Ø«Ù…Ø§Ù†Ù…Ø§Ø¦Ø©", "ØªØ³Ø¹Ù…Ø§Ø¦Ø©"};
 	
-	private static String eleven = "ÃÍÏ ÚÔÑ";
-	private static String twelve = "ÅËäÇ ÚÔÑ";
-	private static String ashar = "ÚÔÑ";
+	private static String eleven = "Ø£Ø­Ø¯ Ø¹Ø´Ø±";
+	private static String twelve = "Ø¥Ø«Ù†Ø§ Ø¹Ø´Ø±";
+	private static String ashar = "Ø¹Ø´Ø±";
 	
-	private static String m2ta = "ãÇÆÊÇ";
+	private static String m2ta = "Ù…Ø§Ø¦ØªØ§";
 	
-	private static String alf = "Ãáİ";
-	private static String alfa = "ÃáİÇ";
-	private static String alfaan = "ÃáİÇä";
-	private static String alaaf = "ÂáÇİ";
-	private static String alfan = "ÃáİÇğ";
+	private static String alf = "Ø£Ù„Ù";
+	private static String alfa = "Ø£Ù„ÙØ§";
+	private static String alfaan = "Ø£Ù„ÙØ§Ù†";
+	private static String alaaf = "Ø¢Ù„Ø§Ù";
+	private static String alfan = "Ø£Ù„ÙØ§Ù‹";
 	
-	private static String million = "ãáíæä";
-	private static String milliona = "ãáíæäÇ";
-	private static String millionaan = "ãáíæäÇä";
-	private static String malayeen = "ãáÇííä";
-	private static String millionan = "ãáíæäÇğ";
+	private static String million = "Ù…Ù„ÙŠÙˆÙ†";
+	private static String milliona = "Ù…Ù„ÙŠÙˆÙ†Ø§";
+	private static String millionaan = "Ù…Ù„ÙŠÙˆÙ†Ø§Ù†";
+	private static String malayeen = "Ù…Ù„Ø§ÙŠÙŠÙ†";
+	private static String millionan = "Ù…Ù„ÙŠÙˆÙ†Ø§Ù‹";
 	
-	private static String milliar = "ãáíÇÑ";
-	private static String millaira = "ãáíÇÑÇ";
-	private static String millairaan = "ãáíÇÑÇä";
-	private static String milliarat = "ãáíÇÑÇÊ";
-	private static String milliaran = "ãáíÇÑÇğ";
+	private static String milliar = "Ù…Ù„ÙŠØ§Ø±";
+	private static String millaira = "Ù…Ù„ÙŠØ§Ø±Ø§";
+	private static String millairaan = "Ù…Ù„ÙŠØ§Ø±Ø§Ù†";
+	private static String milliarat = "Ù…Ù„ÙŠØ§Ø±Ø§Øª";
+	private static String milliaran = "Ù…Ù„ÙŠØ§Ø±Ø§Ù‹";
 	
-	private static String trillion = "ÊÑíáíæä";
-	private static String trilliona = "ÊÑíáíæäÇ";
-	private static String trillionaan = "ÊÑíáíæäÇä";
-	private static String trillionat = "ÊÑíáíæäÇÊ";
-	private static String trillionan = "ÊÑíáíæäÇğ";
+	private static String trillion = "ØªØ±ÙŠÙ„ÙŠÙˆÙ†";
+	private static String trilliona = "ØªØ±ÙŠÙ„ÙŠÙˆÙ†Ø§";
+	private static String trillionaan = "ØªØ±ÙŠÙ„ÙŠÙˆÙ†Ø§Ù†";
+	private static String trillionat = "ØªØ±ÙŠÙ„ÙŠÙˆÙ†Ø§Øª";
+	private static String trillionan = "ØªØ±ÙŠÙ„ÙŠÙˆÙ†Ø§Ù‹";
 	
-	private static String oneHalalah = "æÇÍÏÉ";
-	private static String halalataan = "åááÊÇä";
-	private static String halalat = "åááÇÊ";
-	private static String halalah = "åááÉ";
+	private static String oneHalalah = "ÙˆØ§Ø­Ø¯Ø©";
+	private static String halalataan = "Ù‡Ù„Ù„ØªØ§Ù†";
+	private static String halalat = "Ù‡Ù„Ù„Ø§Øª";
+	private static String halalah = "Ù‡Ù„Ù„Ø©";
 	
-	private static String[] halalahOnes = {"", "ÇÍÏì", "ÇËäÊÇä", "ËáÇË", "ÇÑÈÚ", "ÎãÓ", "ÓÊ", "ÓÈÚ", "ËãÇä", "ÊÓÚ"};
+	private static String[] halalahOnes = {"", "Ø§Ø­Ø¯Ù‰", "Ø§Ø«Ù†ØªØ§Ù†", "Ø«Ù„Ø§Ø«", "Ø§Ø±Ø¨Ø¹", "Ø®Ù…Ø³", "Ø³Øª", "Ø³Ø¨Ø¹", "Ø«Ù…Ø§Ù†", "ØªØ³Ø¹"};
 	
-	private static String tenHalalat = "ÚÔÑ";
-	private static String elevenHalalah = "ÇÍÏì";
-	private static String twelveHalalah = "ÇËäÊÇ";
+	private static String tenHalalat = "Ø¹Ø´Ø±";
+	private static String elevenHalalah = "Ø§Ø­Ø¯Ù‰";
+	private static String twelveHalalah = "Ø§Ø«Ù†ØªØ§";
 	
 	public static String convert(BigDecimal number) {
 		number = number.setScale(2, RoundingMode.CEILING);
