@@ -57,7 +57,7 @@ public class Tafqeet {
 	private static String twelveHalalah = "اثنتا";
 	
 	public static String convert(BigDecimal number) {
-		number = number.setScale(2, RoundingMode.CEILING);
+		number = number.setScale(2, RoundingMode.DOWN);
 		if (number.compareTo(new BigDecimal("1000000000000000")) != -1 || number.compareTo(new BigDecimal("-1000000000000000")) != 1) {
 			throw new IllegalArgumentException("Number is out of allowed range. The allowed range is between -999999999999999.99 to 999999999999999.99");
 		}
